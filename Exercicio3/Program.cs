@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Exercicio3
+﻿namespace Exercicio3
 {
     public class Program
     {
@@ -8,7 +6,7 @@ namespace Exercicio3
         {
             const int salarioMinimo = 200;
             const int faixaSalarial = 100;
-            int[] faixasSalariais = new int[9] { 299, 399, 499, 599, 699, 799, 899, 999, int.MaxValue };
+            int[] faixasSalariais = new int[9] { 299, 399, 499, 599, 699, 799, 899, 999, 999999 };
             int[] contagemVendedores = new int[faixasSalariais.Length];
 
             Console.Write("Digite o número de vendedores: ");
@@ -23,6 +21,10 @@ namespace Exercicio3
 
                 int posicaoLista = (int)Math.Floor((salario - salarioMinimo) / faixaSalarial);
 
+                if (posicaoLista >= 9)
+                {
+                    posicaoLista = 8;
+                }
                 contagemVendedores[posicaoLista]++;
             }
 
@@ -31,8 +33,6 @@ namespace Exercicio3
             {
                 Console.WriteLine($"Faixa salarial: R${salarioMinimo + (i * faixaSalarial)} - R${faixasSalariais[i]}: {contagemVendedores[i]} vendedores");
             }
-
-
         }
     }
 }
