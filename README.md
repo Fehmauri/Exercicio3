@@ -4,7 +4,7 @@
 
 Bem vindo(a) ao repositório do exercício 3 - Vendedores! Este algoritmo foi desenvolvido como parte dos exercícios (3) do PDF.
 
-📚 Por ser um projeto feito no console, acredito que o nível de dificuldade foi bem tranquilo. Nesse algoritmo, começo instanciando dois vetores, para que eu possa utilizalos como faixa salarial e contagem dos vendedores, após isso, começo
+📚 Por ser um projeto feito no console, acredito que o nível de dificuldade foi bem tranquilo. Nesse algoritmo, começo instanciando dois arrays, para que eu possa utilizalos como faixa salarial e contagem dos vendedores, após isso, começo
 pedindo para que o usuário informe quantos vendedores realizaram as vendas. Assim que o usuário informa, solicito o valor das vendas de cada vendedor. Após enviar os números das vendas, utilizo o .length para conseguir atribuir cada vendedor, para sua respectiva faixa salarial. 
 
 🔷 As principais dificudades foram: 
